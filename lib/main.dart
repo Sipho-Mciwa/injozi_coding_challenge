@@ -34,13 +34,15 @@ List<String> generateList() {
 
 Widget _buildRow(String year, BuildContext context) {
   return (ListTile(
-    title: Text(year),
+    title: Center(child: Text(year,
+        style: const TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold))),
     onTap: () => (
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => ResultDetails(year)),
         )
     ),
+    hoverColor: Colors.lightBlueAccent,
   ));
 }
 
