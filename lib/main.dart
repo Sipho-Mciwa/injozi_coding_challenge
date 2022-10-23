@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return (MaterialApp(
-      title: 'Select Year',
+      title: 'F1 project',
       home: Scaffold(
         appBar: AppBar(
           title: const Center(
