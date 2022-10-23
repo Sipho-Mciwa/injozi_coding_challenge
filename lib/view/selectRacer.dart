@@ -1,6 +1,5 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
+import 'package:injozi_coding_challenge/view/viewRacerDetails.dart';
 import 'package:injozi_coding_challenge/webServices/fetchResults.dart';
 
 import '../model/results.dart';
@@ -8,7 +7,6 @@ import '../model/results.dart';
 class ResultDetails extends StatelessWidget {
   final String year;
   const ResultDetails(this.year, {Key? key}) : super(key: key);
-
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +53,7 @@ class ResultDetails extends StatelessWidget {
       onTap: () => (
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => ResultDetails(year)),
+            MaterialPageRoute(builder: (context) => RacerDetails(resultData)),
           )
       ),
       hoverColor: Colors.lightBlueAccent,
